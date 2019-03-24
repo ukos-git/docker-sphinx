@@ -1,6 +1,6 @@
 NAME      := ukos/sphinx
 CONTAINER := ${NAME}:latest
-LOCAL_TOP_LEVEL := $$(git rev-parse --show-toplevel)
+LOCAL_TOP_LEVEL := $$(git rev-parse --show-toplevel)/..
 DOCKER_TOP_LEVEL := /var/sphinx
 DIRECTORY := -v ${LOCAL_TOP_LEVEL}:${DOCKER_TOP_LEVEL}
 
