@@ -21,6 +21,6 @@ RUN pip install \
 	sphinxcontrib-bibtex \
 	sphinxcontrib-fulltoc
 
-WORKDIR /var/sphinx
-ENTRYPOINT ["/usr/bin/make"]
-CMD ["html"]
+#WORKDIR /var/sphinx
+#ENTRYPOINT ["/usr/bin/make"]
+#CMD ["html"]
