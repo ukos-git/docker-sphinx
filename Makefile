@@ -17,10 +17,10 @@ shell: build
 	docker run --rm -it --entrypoint /bin/bash ${DIRECTORY} ${CONTAINER}
 
 html: build
-	docker run ${DIRECTORY} ${CONTAINER}
+	docker run ${DIRECTORY} ${CONTAINER} /usr/bin/make -C /var/sphinx html
 
 latex: build
-	docker run ${DIRECTORY} ${CONTAINER} latex
+	docker run ${DIRECTORY} ${CONTAINER} /usr/bin/make -C /var/sphinx latex
 
 sphinx: html latex
 
