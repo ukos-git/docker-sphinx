@@ -4,16 +4,16 @@ RUN DEBIAN_FRONTEND=noninteractive \
 	apt-get update && \
 	apt-get install --assume-yes --no-install-recommends \
 		dvipng \
-        latexmk \
+		latexmk \
 		make \
 		python \
 		python-pip \
 		python-setuptools \
 		python-wheel \
 		texlive-extra-utils \
-        texlive-fonts-recommended \
-        texlive-latex-extra \
-        texlive-latex-recommended && \
+		texlive-fonts-recommended \
+		texlive-latex-extra \
+		texlive-latex-recommended && \
 	apt-get clean
 
 RUN pip install \
