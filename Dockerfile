@@ -17,6 +17,7 @@ RUN DEBIAN_FRONTEND=noninteractive \
 	apt-get clean
 
 RUN pip install \
+	plotly \
 	pybtex \
 	sphinx \
 	sphinx-autobuild \
