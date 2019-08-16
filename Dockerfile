@@ -6,17 +6,17 @@ RUN DEBIAN_FRONTEND=noninteractive \
 		dvipng \
 		latexmk \
 		make \
-		python \
-		python-pip \
-		python-setuptools \
-		python-wheel \
+		python3 \
+		python3-pip \
+		python3-setuptools \
+		python3-wheel \
 		texlive-extra-utils \
 		texlive-fonts-recommended \
 		texlive-latex-extra \
 		texlive-latex-recommended && \
 	apt-get clean
 
-RUN pip install \
+RUN pip3 install \
 	plotly \
 	pybtex \
 	sphinx \
