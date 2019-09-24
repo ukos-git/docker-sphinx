@@ -4,6 +4,7 @@ RUN DEBIAN_FRONTEND=noninteractive \
 	apt-get update && \
 	apt-get install --assume-yes --no-install-recommends \
 		dvipng \
+		git \
 		latexmk \
 		make \
 		python3 \
@@ -21,7 +22,7 @@ RUN pip3 install \
 	pybtex \
 	sphinx \
 	sphinx-autobuild \
-	sphinxcontrib-bibtex \
+	git+https://github.com/ukos-git/sphinxcontrib-bibtex.git@sort_citations \
 	sphinxcontrib-fulltoc
 
 #WORKDIR /var/sphinx
