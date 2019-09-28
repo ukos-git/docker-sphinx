@@ -22,7 +22,7 @@ RUN pip3 install \
 	pybtex \
 	sphinx \
 	sphinx-autobuild \
-	git+https://github.com/ukos-git/sphinxcontrib-bibtex.git@sort_citations \
+	git+https://github.com/mcmtroffaes/sphinxcontrib-bibtex.git@improve-order-citations \
 	sphinxcontrib-fulltoc
 
 #WORKDIR /var/sphinx
