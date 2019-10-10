@@ -13,6 +13,9 @@ RUN DEBIAN_FRONTEND=noninteractive \
 		python3-wheel \
 		texlive-extra-utils \
 		texlive-fonts-recommended \
+		texlive-lang-cyrillic \
+		texlive-lang-german \
+		texlive-lang-greek \
 		texlive-latex-extra \
 		texlive-latex-recommended && \
 	apt-get clean
