@@ -17,7 +17,8 @@ RUN DEBIAN_FRONTEND=noninteractive \
 		texlive-lang-german \
 		texlive-lang-greek \
 		texlive-latex-extra \
-		texlive-latex-recommended && \
+		texlive-latex-recommended \
+		texlive-science && \
 	apt-get clean
 
 RUN pip3 install \
