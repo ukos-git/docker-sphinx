@@ -6,6 +6,7 @@ RUN DEBIAN_FRONTEND=noninteractive \
 		dvipng \
 		git \
 		latexmk \
+		lmodern \
 		make \
 		python3 \
 		python3-pip \
