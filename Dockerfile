@@ -4,8 +4,9 @@ RUN DEBIAN_FRONTEND=noninteractive \
 	apt-get update && \
 	apt-get install --assume-yes --no-install-recommends \
 		dvipng \
-		git \
+		git git-lfs \
 		latexmk \
+		lmodern \
 		make \
 		python3 \
 		python3-pip \
@@ -13,8 +14,13 @@ RUN DEBIAN_FRONTEND=noninteractive \
 		python3-wheel \
 		texlive-extra-utils \
 		texlive-fonts-recommended \
+		texlive-fonts-extra \
+		texlive-lang-cyrillic \
+		texlive-lang-german \
+		texlive-lang-greek \
 		texlive-latex-extra \
-		texlive-latex-recommended && \
+		texlive-latex-recommended \
+		texlive-science && \
 	apt-get clean
 
 RUN pip3 install \
@@ -22,7 +28,8 @@ RUN pip3 install \
 	pybtex \
 	sphinx \
 	sphinx-autobuild \
-	git+https://github.com/ukos-git/sphinxcontrib-bibtex.git@sort_citations \
+	sphinx-git \
+	git+https://github.com/mcmtroffaes/sphinxcontrib-bibtex.git@develop \
 	sphinxcontrib-fulltoc
 
 #WORKDIR /var/sphinx
