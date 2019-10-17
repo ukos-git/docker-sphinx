@@ -14,6 +14,7 @@ RUN DEBIAN_FRONTEND=noninteractive \
 		python3-wheel \
 		texlive-extra-utils \
 		texlive-fonts-recommended \
+		texlive-fonts-extra \
 		texlive-lang-cyrillic \
 		texlive-lang-german \
 		texlive-lang-greek \
