@@ -13,6 +13,9 @@ requirements:
 build: requirements
 	docker build -t ${CONTAINER} .
 
+push: requirements
+	docker push ${CONTAINER}
+
 shell: build
 	docker run --rm -it --entrypoint /bin/bash ${DIRECTORY} ${CONTAINER}
 
