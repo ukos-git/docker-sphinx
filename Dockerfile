@@ -28,7 +28,7 @@ RUN pip3 install \
 	pybtex \
 	sphinx \
 	sphinx-autobuild \
-	git+https://github.com/ukos-git/sphinx-git.git@dev \
+	git+https://github.com/ukos-git/sphinx-git.git@744fe21a0df30aae8218076c79e88c43614b75cd \
 	git+https://github.com/mcmtroffaes/sphinxcontrib-bibtex.git@develop \
 	sphinxcontrib-fulltoc
 
